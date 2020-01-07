@@ -7,11 +7,11 @@ import messagesEn from '~lang/en';
 
 const locale = 'en';
 
-export function withNavigation(children: any) {
+export function withNavigation (children: any) {
   return <MemoryRouter>{children}</MemoryRouter>;
 }
 
-export function withIntl(children: any, messages?: Record<string, any>) {
+export function withIntl (children: any, messages?: Record<string, any>) {
   return (
     <IntlProvider messages={messages || messagesEn} locale={locale}>
       {children}

@@ -16,7 +16,7 @@ const sagaMiddleware = createSagaMiddleware();
 const persistConfig = {
   key: 'root',
   storage,
-  blacklist: ['login', 'register', 'form', 'router', 'fetchArticleStats']
+  blacklist: ['login', 'router']
 };
 const persistedReducer = persistReducer(persistConfig, reducers(history));
 

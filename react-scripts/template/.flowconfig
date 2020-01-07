@@ -1,0 +1,41 @@
+[ignore]
+.*/*[.]android.js
+<PROJECT_ROOT>/\.buckd/
+.*/node_modules/fbjs/.*
+.*/node_modules/findup/.*
+.*/Libraries/react-native/React.js
+.*/Libraries/polyfills/.*
+
+[include]
+
+[libs]
+flow-typed
+node_modules/react-native/Libraries/react-native/react-native-interface.js
+node_modules/react-native/flow/
+
+[options]
+emoji=true
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+
+module.name_mapper='^~fonts\/\(.*\)$' -> '<PROJECT_ROOT>/src/assets/fonts/\1'
+module.name_mapper='^~images\/\(.*\)$' -> '<PROJECT_ROOT>/src/assets/images/\1'
+module.name_mapper='^~styles\/\(.*\)$' -> '<PROJECT_ROOT>/src/assets/styles/\1'
+module.name_mapper='^~components\/\(.*\)$' -> '<PROJECT_ROOT>/src/components/\1'
+module.name_mapper='^~navigation\/\(.*\)$' -> '<PROJECT_ROOT>/src/navigation/\1'
+module.name_mapper='^~constants\/\(.*\)$' -> '<PROJECT_ROOT>/src/constants/\1'
+module.name_mapper='^~lang\/\(.*\)$' -> '<PROJECT_ROOT>/src/lang/\1'
+module.name_mapper='^~libs\/\(.*\)$' -> '<PROJECT_ROOT>/src/libs/\1'
+module.name_mapper='^~navigation\/\(.*\)$' -> '<PROJECT_ROOT>/src/navigation/\1'
+module.name_mapper='^~actions\/\(.*\)$' -> '<PROJECT_ROOT>/src/redux/actions/\1'
+module.name_mapper='^~containers\/\(.*\)$' -> '<PROJECT_ROOT>/src/redux/containers/\1'
+module.name_mapper='^~reducers\/\(.*\)$' -> '<PROJECT_ROOT>/src/redux/reducers/\1'
+module.name_mapper='^~sagas\/\(.*\)$' -> '<PROJECT_ROOT>/src/redux/sagas/\1'
+module.name_mapper='^~selectors\/\(.*\)$' -> '<PROJECT_ROOT>/src/redux/selectors/\1'
+module.name_mapper='^~screens\/\(.*\)$' -> '<PROJECT_ROOT>/src/screens/\1'
+module.name_mapper='^~services\/\(.*\)$' -> '<PROJECT_ROOT>/src/services/\1'
+module.name_mapper='^~types\/\(.*\)$' -> '<PROJECT_ROOT>/src/types/\1'
+module.name_mapper='^~utils\/\(.*\)$' -> '<PROJECT_ROOT>/src/utils/\1'
+module.name_mapper='^~src\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+
+[lints]
+deprecated-utility=off

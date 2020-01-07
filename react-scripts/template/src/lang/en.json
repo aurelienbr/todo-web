@@ -1,0 +1,27 @@
+{
+  "app.title": "React Boilerplate",
+
+  "app.page.login.title": "Connection",
+  "app.page.login.submit": "Login",
+  "app.page.login.error": "Unable to login",
+  "app.page.login.not.a.member": "Not a member ?",
+  "app.page.login.go.to.register": "Register",
+
+  "app.page.register.title": "Register",
+  "app.page.register.submit": "Register",
+  "app.page.register.member": "Already have an account ?",
+  "app.page.register.go.to.login": "Login",
+
+  "app.form.error.email": "Valid email is required",
+  "app.form.error.password": "Password is required",
+  "app.form.error.password.confirm": "Both password must be equal",
+  "app.form.label.email": "Email",
+  "app.form.placeholder.email": "ben.smith@company.co",
+  "app.form.label.password": "******",
+  "app.form.placeholder.password": "Password",
+  "app.form.label.password.confirm": "Confirm password",
+  "app.form.placeholder.password.confirm": "Confirm your password",
+
+  "app.error.unknow": "An error occured",
+  "app.error.login.not.found": "Account or password incorrect"
+}

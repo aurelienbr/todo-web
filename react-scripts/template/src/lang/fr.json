@@ -1,0 +1,27 @@
+{
+  "app.title": "React Boilerplate",
+
+  "app.page.login.title": "Connexion",
+  "app.page.login.submit": "Se connecter",
+  "app.page.login.error": "Impossible de se connecter",
+  "app.page.login.not.a.member": "Pas encore membre ?",
+  "app.page.login.go.to.register": "S'inscrire",
+
+  "app.page.register.title": "Inscription",
+  "app.page.register.submit": "S'inscrire",
+  "app.page.register.member": "Déjà membre ?",
+  "app.page.register.go.to.login": "Se connecter",
+
+  "app.form.error.email": "L'email doit être valide",
+  "app.form.error.password": "Mot de passe requis",
+  "app.form.error.password.confirm": "Les mots de passes doivent correspondre",
+  "app.form.label.email": "Email",
+  "app.form.placeholder.email": "ben.smith@company.co",
+  "app.form.label.password": "Mot de passe",
+  "app.form.placeholder.password": "******",
+  "app.form.label.password.confirm": "Confirmez le mot de passe",
+  "app.form.placeholder.password.confirm": "Confirmez votre mot de passe",
+
+  "app.error.unknow": "Une erreur est survenue",
+  "app.error.login.not.found": "Nom de compte ou mot de passe incorrecte"
+}

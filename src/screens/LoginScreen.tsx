@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, RouteComponentProps } from 'react-router';
-import { withFormik, Form, FormikProps, Field } from 'formik';
+import { withFormik, Form, FormikProps } from 'formik';
 import { injectIntl, FormattedMessage, IntlShape } from 'react-intl';
 import { Card, CardBody, Button, Spinner, Alert } from 'reactstrap';
 
@@ -9,7 +9,6 @@ import { StateType } from '~reducers/index';
 import { loginUser } from '~actions/loginActions';
 import { STATUS_LOADING, STATUS_FAILURE, STATUS_SUCCESS, Status } from '~types/Status';
 import LanguagePicker from '~components/fragments/LanguagePicker';
-import DefaultInput from '~components/fragments/input/DefaultInput';
 
 type OwnProps = {};
 
@@ -56,26 +55,6 @@ class LoginScreen extends PureComponent<Props> {
               <LanguagePicker />
             </div>
             <Form>
-              <Field
-                name="email"
-                type="text"
-                component={DefaultInput}
-                label={this.props.intl.formatMessage({ id: 'app.form.label.email' })}
-                placeholder={this.props.intl.formatMessage({ id: 'app.form.placeholder.email' })}
-                autoCapitalize="none"
-                returnKeyType="next"
-                onSubmitEditing={this.handleFocusPasswordField}
-              />
-
-              <Field
-                // eslint-disable-next-line
-                innerRef={(r: HTMLInputElement) => (this._passwordField = r)}
-                name="password"
-                type="password"
-                label={this.props.intl.formatMessage({ id: 'app.form.label.password' })}
-                component={DefaultInput}
-                placeholder={this.props.intl.formatMessage({ id: 'app.form.placeholder.password' })}
-              />
 
               <div style={{ marginTop: 10 }}>
                 <Button style={{ width: 120 }} size="md" type="submit" disabled={!isValid} onClick={this.handleLogin}>

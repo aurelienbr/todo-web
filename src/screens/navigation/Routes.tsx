@@ -3,7 +3,6 @@ import Loadable from 'react-loadable';
 import { Route, Switch } from 'react-router-dom';
 
 import Loading from '~screens/LoadingScreen';
-import PrivateRoute from '~screens/navigation/PrivateRoute';
 import PublicRoute from '~screens/navigation/PublicRoute';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -15,8 +14,6 @@ const makeAsyncComponent = (componentImport: any) => {
 };
 
 const LoginScreen = makeAsyncComponent(() => import('~screens/LoginScreen'));
-const RegisterScreen = makeAsyncComponent(() => import('~screens/RegisterScreen'));
-const ArticleScreen = makeAsyncComponent(() => import('~screens/ArticleScreen'));
 const PageNotFound = makeAsyncComponent(() => import('~screens/PageNotFound'));
 
 // ProfileScreen.preload();
@@ -36,8 +33,6 @@ export function withProps (externalProps: Record<string, any>) {
 
 const Routes = () => (
   <Switch>
-    <PublicRoute path="/register" component={RegisterScreen} />
-    <PrivateRoute path="/articles" component={ArticleScreen} />
     <PublicRoute path="/" component={LoginScreen} />
     <Route component={PageNotFound} />
   </Switch>

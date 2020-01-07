@@ -5,8 +5,6 @@ import { connectRouter, RouterState } from 'connected-react-router';
 
 import locale from '~reducers/localeReducer';
 import login from '~reducers/loginReducer';
-import register from '~reducers/registerReducer';
-import fetchArticles from '~reducers/fetchArticlesReducer';
 
 const loginPersistConfig = {
   key: 'login',
@@ -16,9 +14,7 @@ const loginPersistConfig = {
 
 const reducers = {
   locale,
-  login: persistReducer(loginPersistConfig, login),
-  register,
-  fetchArticles
+  login: persistReducer(loginPersistConfig, login)
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
