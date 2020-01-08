@@ -1,6 +1,25 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Dokki
+
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+Description DOKKI
+The project is based on **ReactJS**.
+
+## Getting started
+
+## Tech
+
+- **TypeScript** for type-checking,
+- **Jest** for testing,
+- **Redux** is used as a state container,
+- **Redux-saga** to handle asynchronous tasks,
+- **Axios** for HTTP call
+
+## Available scripts
 
 In the project directory, you can run:
 
@@ -42,3 +61,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Writing and running tests
+
+## Environment Variables
+
+## Generator
+
+## Common issues and troubleshooting
+
+## Git
