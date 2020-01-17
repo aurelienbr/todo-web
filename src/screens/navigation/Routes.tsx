@@ -2,19 +2,14 @@ import React, { ComponentType } from 'react';
 import Loadable from 'react-loadable';
 import { Route, Switch } from 'react-router-dom';
 
-import Loading from '~screens/LoadingScreen';
-import PublicRoute from '~screens/navigation/PublicRoute';
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const makeAsyncComponent = (componentImport: any) => {
   return Loadable({
     loader: componentImport,
-    loading: Loading
+    loading: () => <div />
   });
 };
-
-const LoginScreen = makeAsyncComponent(() => import('~screens/LoginScreen'));
-const PageNotFound = makeAsyncComponent(() => import('~screens/PageNotFound'));
+const HomeScreen = makeAsyncComponent(() => import('~screens/HomeScreen'));
 
 // ProfileScreen.preload();
 
@@ -33,8 +28,7 @@ export function withProps (externalProps: Record<string, any>) {
 
 const Routes = () => (
   <Switch>
-    <PublicRoute path="/" component={LoginScreen} />
-    <Route component={PageNotFound} />
+    <Route component={HomeScreen} />
   </Switch>
 );
 

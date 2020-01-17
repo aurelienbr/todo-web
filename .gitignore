@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# build ts
+/dist
+
 # testing
 /coverage
 /e2e/coverage

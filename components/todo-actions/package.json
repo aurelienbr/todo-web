@@ -1,0 +1,40 @@
+{
+  "name": "@bit/aureldev.shared-reducer.todo-actions",
+  "version": "1.0.1",
+  "homepage": "https://bit.dev/aureldev/shared-reducer/todo-actions",
+  "main": "dist/redux/actions/todoActions.js",
+  "dependencies": {
+    "@bit/aureldev.shared-reducer.todos": "file:../todos"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": {
+        "bit.envs/compilers/typescript@3.1.29": {
+          "rawConfig": {
+            "tsconfig": {
+              "compilerOptions": {
+                "target": "es2015",
+                "module": "CommonJS"
+              }
+            },
+            "development": false,
+            "copyPolicy": {
+              "ignorePatterns": [
+                "package.json",
+                "package-lock.json",
+                "tsconfig.json"
+              ],
+              "disable": false
+            },
+            "useExperimentalCache": false
+          },
+          "options": {},
+          "files": {}
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { API_URL } from '~constants/apiConstants';
+// import { API_URL } from '~constants/apiConstants';
 
 // export default axios.create({
 //   baseURL: API_URL,
@@ -11,8 +11,8 @@ import { API_URL } from '~constants/apiConstants';
 //     },
 // });
 
-const api = axios.create({
-  baseURL: API_URL,
+const api = axios.create({  
+  baseURL: "127.0.0.1",
   timeout: 30000
 });
 

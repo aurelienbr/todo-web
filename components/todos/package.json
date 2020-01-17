@@ -1,0 +1,38 @@
+{
+  "name": "@bit/aureldev.shared-reducer.todos",
+  "version": "1.0.0",
+  "homepage": "https://bit.dev/aureldev/shared-reducer/todos",
+  "main": "dist/index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": {
+        "bit.envs/compilers/typescript@3.1.29": {
+          "rawConfig": {
+            "tsconfig": {
+              "compilerOptions": {
+                "target": "es2015",
+                "module": "CommonJS"
+              }
+            },
+            "development": false,
+            "copyPolicy": {
+              "ignorePatterns": [
+                "package.json",
+                "package-lock.json",
+                "tsconfig.json"
+              ],
+              "disable": false
+            },
+            "useExperimentalCache": false
+          },
+          "options": {},
+          "files": {}
+        }
+      }
+    }
+  }
+}

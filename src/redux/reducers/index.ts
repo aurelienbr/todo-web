@@ -1,29 +1,15 @@
 import { combineReducers } from 'redux';
-import { persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-import { connectRouter, RouterState } from 'connected-react-router';
+import todo from "shared-reducers-toddo";
 
-import locale from '~reducers/localeReducer';
-import login from '~reducers/loginReducer';
-
-const loginPersistConfig = {
-  key: 'login',
-  storage,
-  whitelist: ['token']
-};
-
-const reducers = {
-  locale,
-  login: persistReducer(loginPersistConfig, login)
-};
+// import todos from '@bit/aureldev.shared-reducer.todo-reducer';
+// import todos from '../reducers/todosReducer';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default (history: any) =>
+export default () =>
   combineReducers({
-    ...reducers,
-    router: connectRouter(history)
+   todo
   });
 
-const rootReducer = combineReducers(reducers);
+const rootReducer = combineReducers(todo);
 
-export type StateType = ReturnType<typeof rootReducer & { router: RouterState }>;
+export type StateType = ReturnType<typeof rootReducer>;
