@@ -11,10 +11,9 @@ type Props = OwnProps & RouteComponentProps;
 class App extends PureComponent<Props> {
   render () {
     return (
-        <Routes />
+      <Routes />
     );
   }
 }
 
 export default withRouter(App);
-

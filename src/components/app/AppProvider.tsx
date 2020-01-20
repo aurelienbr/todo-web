@@ -7,11 +7,10 @@ import App from '~components/app/App';
 
 const AppProvider = () => (
   <Provider store={store}>
-      <ConnectedRouter history={history}>
-        <App />  
-      </ConnectedRouter>
+    <ConnectedRouter history={history}>
+      <App />
+    </ConnectedRouter>
   </Provider>
 );
 
 export default AppProvider;
-  

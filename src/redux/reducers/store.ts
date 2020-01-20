@@ -1,27 +1,21 @@
 // import ReduxThunk from 'redux-thunk';
-import { createStore, applyMiddleware } from 'redux';
-//import createSagaMiddleware from 'redux-saga';
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-import { composeWithDevTools } from 'redux-devtools-extension';
+import { createStore } from 'redux';
+// import createSagaMiddleware from 'redux-saga';
+import { persistStore } from 'redux-persist';
 import { createBrowserHistory } from 'history';
-import { routerMiddleware } from 'connected-react-router';
 
 import reducers from '~reducers/index';
-//import rootSaga from '~sagas/root';
+// import rootSaga from '~sagas/root';
 
 export const history = createBrowserHistory();
 
 // const sagaMiddleware = createSagaMiddleware();
-const persistConfig = {
-  key: 'root',
-  storage,
-};
-const persistedReducer = persistReducer(persistConfig, reducers(history));
+const stores = reducers(history);
+
+// export const store: any = createStore(persistedReducer, {}, composeWithDevTools(applyMiddleware(sagaMiddleware */, routerMiddleware(history))));
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-// export const store: any = createStore(persistedReducer, {}, composeWithDevTools(applyMiddleware(sagaMiddleware */, routerMiddleware(history))));
-export const store: any = createStore(persistedReducer);
+export const store: any = createStore(stores);
 export const persistor = persistStore(store);
 
-//sagaMiddleware.run(rootSaga);
+// sagaMiddleware.run(rootSaga);

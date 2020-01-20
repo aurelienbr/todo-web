@@ -1,15 +1,18 @@
 import { combineReducers } from 'redux';
-import todo from "shared-reducers-toddo";
+import { connectRouter, RouterState } from 'connected-react-router';
+import { reducers } from 'shared-reducers-toddo';
 
-// import todos from '@bit/aureldev.shared-reducer.todo-reducer';
-// import todos from '../reducers/todosReducer';
+export const finalReducers = {
+  todoReducers: reducers.todoReducers
+};
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default () =>
+export default (history: any) =>
   combineReducers({
-   todo
+    ...finalReducers,
+    router: connectRouter(history)
   });
 
-const rootReducer = combineReducers(todo);
+const rootReducer = combineReducers(finalReducers);
 
-export type StateType = ReturnType<typeof rootReducer>;
+export type StateType = ReturnType<typeof rootReducer & { router: RouterState }>;

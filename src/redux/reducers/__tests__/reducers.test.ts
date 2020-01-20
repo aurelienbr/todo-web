@@ -1,5 +1,5 @@
-import todo from "shared-reducers-toddo/dist";
+import { reducers } from 'shared-reducers-toddo';
 
 test('reducer', () => {
-    expect(todo).toBe(0);
-})
+  expect(reducers).toBe(0);
+});

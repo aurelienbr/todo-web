@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 const makeAsyncComponent = (componentImport: any) => {
   return Loadable({
     loader: componentImport,
+    // eslint-disable-next-line react/display-name
     loading: () => <div />
   });
 };

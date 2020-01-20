@@ -11576,10 +11576,10 @@ shallow-equal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
   integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
 
-shared-reducers-toddo@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/shared-reducers-toddo/-/shared-reducers-toddo-0.1.6.tgz#d33bc3328a790986a9a4b34d93577db0f02af8d4"
-  integrity sha512-gkhlt+kXOB/erJOdzBYcCacdw9U0wbbaZkjdZXt6ZA7oT13fuF8EdBxBT7Rramsj3QcxN8OC2qxcuKGUldVvnA==
+shared-reducers-toddo@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/shared-reducers-toddo/-/shared-reducers-toddo-0.2.0.tgz#b01cc12dfa2db073ddbbe3d3636677ff9f55bbdb"
+  integrity sha512-w1YiVKL3vhGRBf7qtt6BpnBxGZLFeJJ55d2ZfZ5JvarywURjIAe/fo7zY2+VYORJUX5iBdOsSvoljk5GZcPU0g==
   dependencies:
     "@types/jest" "^24.0.23"
     "@types/node" "12.12.14"
@@ -11597,7 +11597,7 @@ shared-reducers-toddo@^0.1.6:
     react-loadable "5.5.0"
     react-redux "7.1.1"
     react-router-dom "5.1.2"
-    react-scripts "file:../../../../../Library/Caches/Yarn/v4/npm-shared-reducers-toddo-0.1.6-d33bc3328a790986a9a4b34d93577db0f02af8d4/node_modules/shared-reducers-toddo/react-scripts"
+    react-scripts "file:../../../../../Library/Caches/Yarn/v4/npm-shared-reducers-toddo-0.2.0-b01cc12dfa2db073ddbbe3d3636677ff9f55bbdb/node_modules/shared-reducers-toddo/react-scripts"
     reactstrap "8.2.0"
     redux "4.0.1"
     redux-devtools-extension "2.13.8"
